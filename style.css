@@ -1,0 +1,149 @@
+body, h1, h2, p, a, img {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7; 
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.hero {
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    height: 100vh;
+    animation: changeBackground 20s infinite linear; 
+}
+
+.hero-content {
+    max-width: 600px;
+    animation: fadeIn 1s;
+}
+
+.hero h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.games-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.games-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.game-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.game-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.game-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007BFF; 
+}
+
+.game-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555; 
+}
+
+.hidden-paragraph {
+    display: none;
+    margin-top: 10px; 
+}
+
+.visible {
+    display: block;
+}
+
+
+@keyframes changeBackground {
+    0% {
+        background-image: url('IDV.jpg');
+    }
+    25% {
+        background-image: url('Nikke.jpg');
+    }
+    50% {
+        background-image: url('IDV2.jpg');
+    }
+    75% {
+        background-image: url('Nikke3.png');
+    }
+    100% {
+        background-image: url('Nikke4.jpeg');
+    }
+}
