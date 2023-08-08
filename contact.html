@@ -20,15 +20,29 @@
         <div class="contact-container">
             <h2>Contact Me</h2>
             <p>
-                Have any questions or suggestions? Feel free to reach out to me using the form below.
+                Have any questions or suggestions about a game I should check out? Feel free to reach out to me using the form below. I'll be able to message you back within 5 days.
             </p>
-            <form action="submit_form.php" method="post">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit" class="btn">Send</button>
-            </form>
+            <form action="#" method="post">
+                <form action="#" method="post" onsubmit="return validateForm()">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div id="nameError" class="error-message"></div>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div id="emailError" class="error-message"></div>
+                
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                
+                    <button type="submit" class="btn">Send</button>
+                </form>
         </div>
     </section>
+    <script src="scriptContact.js"></script>
+</body>
+</html>
+
 
 
 
